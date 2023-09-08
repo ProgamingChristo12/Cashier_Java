@@ -21,6 +21,18 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>RELEASE</version>
+      <scope>test</scope>
+    </dependency>
+      <dependency>
+          <groupId>org.junit.jupiter</groupId>
+          <artifactId>junit-jupiter</artifactId>
+          <version>RELEASE</version>
+          <scope>test</scope>
+      </dependency>
   </dependencies>
   <build>
     <plugins>
@@ -34,6 +46,14 @@
               <mainClass>com.smk.cashier.App</mainClass>
             </manifest>
           </archive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>16</source>
+          <target>16</target>
         </configuration>
       </plugin>
     </plugins>

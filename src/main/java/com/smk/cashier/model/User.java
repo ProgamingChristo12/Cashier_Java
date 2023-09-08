@@ -1,15 +1,15 @@
 package com.smk.cashier.model;
 
 public class User extends Model{
-    private  String userNAme;
+    private  String userName;
     private  String password;
 
-    public String getUserNAme() {
-        return userNAme;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUserNAme(String userNAme) {
-        this.userNAme = userNAme;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getPassword() {
@@ -22,7 +22,7 @@ public class User extends Model{
     @Override
     public String toString() {
         return "User{" +
-                "userNAme='" + userNAme + '\'' +
+                "userNAme='" + userName + '\'' +
                 ", password='" + password + '\'' +
                 ", dateCreated=" + dateCreated +
                 ", lastModifed=" + lastModifed +
