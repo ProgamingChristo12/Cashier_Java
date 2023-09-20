@@ -2,6 +2,7 @@ package com.smk.cashier.service;
 
 import com.smk.cashier.model.Barang;
 
+import javax.xml.namespace.QName;
 import java.io.*;
 import java.util.LinkedList;
 import java.util.List;
@@ -118,5 +119,12 @@ public class BarangService {
     ){
         barangList.add(barang);
         writeFile();
+    }
+    public List <Barang> findByName(String name) {
+        List<Barang> resultList =
+                barangList.stream().filter(
+                        barang -> barang.getNamaBarang().startsWith(name)
+                ).toList();
+        return resultList;
     }
 }
