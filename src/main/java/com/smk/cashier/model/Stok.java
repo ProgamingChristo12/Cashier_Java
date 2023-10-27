@@ -1,5 +1,7 @@
 package com.smk.cashier.model;
 
+import java.sql.CallableStatement;
+
 public class Stok extends Model{
     private int id;
     private String kodeBarang;
@@ -41,4 +43,5 @@ public class Stok extends Model{
                 ", updatedBy='" + updatedBy + '\'' +
                 '}';
     }
+
 }
